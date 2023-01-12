@@ -1,0 +1,57 @@
+body {
+	width: 1000px;
+	margin: auto;
+	font-family: arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	font-size: 3em;
+}
+
+ul {
+	text-align: center;
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 20px;
+	text-align: center;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	font-size: 18px;
+	color: royalblue;
+}
+
+/* Page "Qui suis-je ?" début*/
+
+#moi {
+	width: 400px;
+	height: 490px;
+	float: left;
+	margin-right: 50px;
+}
+
+#presentation {
+	text-align: justify;
+}
+
+.reseaux {
+	width: 50px;
+	height: 50px;
+}
+
+.reseaux:hover {
+	width: 60px;
+	height: 60px;
+}
+
+/* Page "Qui suis-je ?" fin*/
