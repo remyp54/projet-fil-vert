@@ -1,17 +1,21 @@
+/* Général début */
+
 body {
 	width: 1000px;
 	margin: auto;
-	font-family: arial, sans-serif;
+	font-family: Trebuchet MS, sans-serif;
 }
 
 h1 {
 	text-align: center;
-	font-family: 'Lobster', cursive;
+	font-family: 'Lobster', cursive, sans-serif;
 	font-size: 3em;
 }
 
 ul {
 	text-align: center;
+	font-size: 1.2em;
+	font-family: impact, sans-serif;
 }
 
 li {
@@ -27,9 +31,21 @@ li a {
 }
 
 a:hover {
-	font-size: 18px;
+	font-size: 1.2em;
 	color: royalblue;
 }
+
+main {
+	margin-top: 100px;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+/* Généarl fin*/
+
+/* -----------------------------------------------------*/
 
 /* Page "Qui suis-je ?" début*/
 
@@ -44,14 +60,17 @@ a:hover {
 	text-align: justify;
 }
 
-.reseaux {
-	width: 50px;
-	height: 50px;
-}
-
-.reseaux:hover {
-	width: 60px;
-	height: 60px;
-}
-
 /* Page "Qui suis-je ?" fin*/
+
+
+/* -----------------------------------------------------*/
+
+
+/* Page "Contact" début */
+
+textarea {
+	width: 500px;
+	height: 300px;
+}
+
+/* Page "Contact" fin */
