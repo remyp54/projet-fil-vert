@@ -1,4 +1,4 @@
-/* Général début */
+/* Apparence général début */
 
 body {
 	width: 1000px;
@@ -20,7 +20,7 @@ ul {
 
 li {
 	list-style-type: none;
-	display: inline-block;
+	display: inline;
 	margin: 20px;
 	text-align: center;
 }
@@ -31,7 +31,6 @@ li a {
 }
 
 a:hover {
-	font-size: 1.2em;
 	color: royalblue;
 }
 
@@ -43,7 +42,13 @@ p {
 	font-size: 1.2em;
 }
 
-/* Généarl fin*/
+footer {
+	text-align: center;
+	background-color: royalblue;
+}
+
+
+/* Apparence généarl fin*/
 
 /* -----------------------------------------------------*/
 
