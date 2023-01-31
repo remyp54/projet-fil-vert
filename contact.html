@@ -23,31 +23,44 @@
 		</nav>
 	</header>
 
-	<div class="contact">
-		<label>Nom</label>
-		<input type="text" name="nom"><br>
-		<br>
-		<label>Prénom</label>
-		<input type="text" name="prenom"><br>
-		<br>
-		<label>E-mail</label>
-		<input type="mail" name="mail"><br>
-		<br>
-		<label>Téléphone</label>
-		<input type="number" name="tel"><br>
-		<br>
-		<p>
-			<label>Message</label><br>
-			<textarea type="text" name="message" cols="50" rows="10"></textarea>
-		</p>
-		<br>
-		<br>
-		<p>
-			<input type="submit" value="Envoyer">
-		</p>
-	</div>
+	<main class="contact">
+		<article>
+			<p class="label">
+				<label>Nom</label>
+				<input type="text" name="nom">
+			</p>
+			<br>
+			<p class="label">
+				<label>Prénom</label>
+				<input type="text" name="prenom">
+			</p>
+		</article>
 
-	<footer class="pieddepage">
+		<article>
+			<p class="label">
+				<label class="label">E-mail</label>
+				<input type="mail" name="mail">
+			</p>
+			<br>
+			<p class="label">
+				<label>Téléphone</label>
+				<input type="text" name="tel">
+			</p>
+		</article>
+		
+		<article>
+			<p class="label">
+				<label>Message</label>
+				<textarea type="text" name="message" cols="50" rows="10"></textarea>
+			</p>
+			<br>
+			<p class="label">
+				<input type="submit" value="Envoyer">
+			</p>
+		</article>
+	</main>
+
+	<footer>
 		<p>&copy; 2023 - Rémy Paquin - Tous droits reservés</p>
 	</footer>
 </body>

@@ -1,6 +1,9 @@
-/* Apparence général début */
+/* Apparence générale début */
+
 * {
 	margin: auto;
+	padding: auto;
+	box-sizing: border-box;
 }
 
 body {
@@ -9,7 +12,6 @@ body {
 
 header {
 	padding-top: 25px;
-	margin-bottom: 100px;
 }
 
 h1 {
@@ -38,7 +40,7 @@ li a {
 }
 
 a:hover {
-	color: royalblue;
+	color: #7451eb;
 }
 
 main {
@@ -51,8 +53,7 @@ p {
 
 footer {
 	text-align: center;
-	background-color: lightblue;
-	padding-top: 30px;
+	padding-top: 10px;
 	padding-bottom: 30px;
 	margin-top: 150px;
 }
@@ -63,24 +64,18 @@ footer {
 	width: 100%;
 }
 
-/* Apparence généarl fin*/
+/* Apparence généarle fin */
 /* -----------------------------------------------------*/
-/* Page "Book" début */
+/* Page "Accueil" début */
 
-.modele {
-	width: 300px;
-	height: 449px;
+#stellartfilms {
+	color: darkolivegreen;
+	text-decoration: none;
 }
 
-#modele {
-	display: flex;
-	flex-wrap: wrap;
-	width: 1300px;
+#stellartfilms:hover {
+	color: #7451eb;
 }
-
-/* Page "Book" fin */
-/* -----------------------------------------------------*/
-/* Page "Qui suis-je ?" début*/
 
 #quisuisje {
 	width: 1300px;
@@ -97,14 +92,62 @@ footer {
 	text-align: justify;
 }
 
-/* Page "Qui suis-je ?" fin*/
+/* Page "Accueil" fin */
+/* -----------------------------------------------------*/
+/* Page "Book" début */
+
+.modele {
+	width: 300px;
+	height: 449px;
+}
+
+#modele {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 1300px;
+}
+
+/* Page "Book" fin */
+/* -----------------------------------------------------*/
+/* Page "Photos de tournages" début */
+
+.tournage {
+	width: 500px;
+	height: 333px;
+}
+
+#tournages {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 1300px;
+}
+
+/* Page "Photos de tournages" fin */
 /* -----------------------------------------------------*/
 /* Page "Contact" début */
 
 .contact {
 	display: grid;
-	grid-column: 2fr 2fr;
-	grid-row: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 10px 10px;
+    gap: 10px;
+}
+
+.label {
+	display: grid;
+	grid-area: ;
 }
 
 /* Page "Contact" fin */
+/* -----------------------------------------------------*/
+/* Responsive début */
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+/*Responsive fin */
