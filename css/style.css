@@ -7,24 +7,34 @@
 }
 
 body {
-	font-family: Trebuchet MS, sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 header {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
 	padding-top: 25px;
+	padding-bottom: 20px;
 }
 
 h1 {
 	text-align: center;
 	font-family: 'Lobster', sans-serif;
-	font-size: 3em;
+	font-size: 3.5em;
 	margin-bottom: 50px;
+	color: black;
+	text-shadow: 2px 2px 2px gray;
 }
 
 ul {
 	text-align: center;
 	font-size: 1.2em;
-	font-family: impact, sans-serif;
+	font-family: Arial, sans-serif;
+	background-color: #d5af79;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 li {
@@ -36,11 +46,12 @@ li {
 
 li a {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 a:hover {
-	color: #7451eb;
+	color: 	#FFD700;
+	transform: scale(1.0);
 }
 
 main {
@@ -55,8 +66,10 @@ footer {
 	width: 100%;
 	text-align: center;
 	padding-top: 10px;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	margin-top: 150px;
+	background-color: #d5af79;
+	color: white;
 }
 
 .pieddepage {
@@ -65,18 +78,14 @@ footer {
 	width: 100%;
 }
 
-/* Apparence généarle fin */
-/* -----------------------------------------------------*/
-/* Page "Accueil" début */
-
-#stellartfilms {
-	color: #d5af79;
+.site_pied_de_page {
 	text-decoration: none;
+	color: white;
 }
 
-#stellartfilms:hover {
-	color: #7451eb;
-}
+/* Apparence généarle fin */
+/* ----------------------------------------------------- */
+/* Page "Accueil" début */
 
 #quisuisje {
 	width: 1300px;
@@ -93,8 +102,27 @@ footer {
 	text-align: justify;
 }
 
+#stellartfilms {
+	color: #d5af79;
+	text-decoration: none;
+}
+
+#stellartfilms:hover {
+	color: 	#FFD700;
+}
+
+#reseaux_sociaux {
+	width: 350px;
+	margin-left: 450px;
+	display: flex;
+}
+
+.reseaux:hover {
+	transform: scale(1.2);
+}
+
 /* Page "Accueil" fin */
-/* -----------------------------------------------------*/
+/* ----------------------------------------------------- */
 /* Page "CV" début */
 
 #cv {
@@ -114,17 +142,12 @@ footer {
 }
 
 .titre a:hover {
-	color: #7451eb;
+	color: #FFD700;
 }
 
 /* Page "CV" fin */
-/* -----------------------------------------------------*/
+/* ----------------------------------------------------- */
 /* Page "Book" début */
-
-.modele {
-	width: 300px;
-	height: 449px;
-}
 
 #modele {
 	display: flex;
@@ -133,13 +156,36 @@ footer {
 	width: 1300px;
 }
 
+.modele {
+	width: 300px;
+	height: 449px;
+	position: relative;
+}
+
+.modele:hover {
+	opacity: 0.3;
+}
+
+.voir_la_photo {
+	
+}
+
 /* Page "Book" fin */
-/* -----------------------------------------------------*/
+/* ----------------------------------------------------- */
 /* Page "Photos de tournages" début */
 
 .tournage {
 	width: 500px;
 	height: 333px;
+}
+
+.tournage1 {
+	width: 500px;
+	height: 225px;
+}
+
+.tournage:hover, .tournage1:hover {
+	opacity: 0.3;
 }
 
 #tournages {
@@ -150,7 +196,7 @@ footer {
 }
 
 /* Page "Photos de tournages" fin */
-/* -----------------------------------------------------*/
+/* ----------------------------------------------------- */
 /* Page "Contact" début */
 
 .contact {
@@ -167,11 +213,21 @@ textarea {
 }
 
 /* Page "Contact" fin */
-/* -----------------------------------------------------*/
+/* ----------------------------------------------------- */
 /* Responsive début */
 
 @media screen and (max-width: 375px) {
 	body {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	p {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#reseaux_sociaux {
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -194,6 +250,11 @@ textarea {
 		flex-wrap: wrap;
 	}
 
+	#reseaux_sociaux {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 	.modele {
 		display: flex;
 		flex-wrap: wrap;
@@ -205,4 +266,4 @@ textarea {
 	}
 }
 
-/*Responsive fin */
+/* Responsive fin */
