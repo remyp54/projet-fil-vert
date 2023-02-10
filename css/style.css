@@ -211,8 +211,16 @@ form {
     width: 400px;
 }
 
+input, select {
+	border-radius: 5px;
+	height: 30px;
+	border: 1px solid black;
+}
+
 textarea {
 	width: 400px;
+	border-radius: 5px;
+	border: 1px solid black;
 }
 
 #envoyer {
@@ -223,47 +231,55 @@ textarea {
 /* ----------------------------------------------------- */
 /* Responsive début */
 
-@media screen and (max-width: 375px) {
-	body {
+@media screen and (min-width: 375px) {
+	p {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 	}
 
 	#reseaux_sociaux {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 	}
 
 	.modele {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 	}
 
 	.tournages {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 	}
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 	body {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 	}
 
 	#reseaux_sociaux {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 	}
 
 	.modele {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 	}
 
 	.tournages {
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 	}
 }
